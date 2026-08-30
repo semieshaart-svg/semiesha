@@ -1,0 +1,406 @@
+<!-- =========================================================
+     ✦ PRICE / COMMISSIONS ✦
+========================================================= -->
+
+<section class="price-page">
+
+    <!-- HEADER -->
+    <div class="price-header">
+        <div class="price-header-deco">✦ ݁ ˖</div>
+
+        <div>
+            <span class="price-small-title">COMMISSIONS & ARTWORK</span>
+            <h1>♡ PRICE</h1>
+            <p>
+                a little collection of my commission options
+                <br>
+                choose your favorite style & let's create something cute ♡
+            </p>
+        </div>
+
+        <div class="price-header-star">✧</div>
+    </div>
+
+
+    <!-- WILL DRAW -->
+    <div class="draw-box">
+
+        <div class="section-label">
+            <span>✦</span>
+            WILL DRAW
+            <span>✦</span>
+        </div>
+
+        <div class="draw-list">
+
+            <div class="draw-item">
+                <span>♡</span>
+                Female
+            </div>
+
+            <div class="draw-item">
+                <span>♡</span>
+                Armor
+            </div>
+
+            <div class="draw-item">
+                <span>♡</span>
+                OCs
+            </div>
+
+            <div class="draw-item">
+                <span>♡</span>
+                Fanart
+            </div>
+
+            <div class="draw-item">
+                <span>♡</span>
+                NSFW
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BODY COMMISSIONS -->
+    <div class="commission-section">
+
+        <div class="section-heading">
+            <span class="heading-decoration">✧</span>
+            <div>
+                <span class="heading-mini">COMMISSION OPTIONS</span>
+                <h2>ARTWORK</h2>
+            </div>
+            <span class="heading-decoration">✧</span>
+        </div>
+
+
+        <div class="price-grid">
+
+
+            <!-- FULL BODY -->
+            <article class="price-card">
+
+                <div class="card-top">
+                    <span class="card-number">01</span>
+                    <span class="card-icon">♡</span>
+                </div>
+
+                <div class="example-image">
+                    <div class="image-placeholder">
+                        <span>✦</span>
+                        <small>FULL BODY</small>
+                        <span>✦</span>
+                    </div>
+                </div>
+
+                <div class="card-title-row">
+                    <h3>FULL BODY</h3>
+                    <span class="tiny-tag">01</span>
+                </div>
+
+                <p class="card-description">
+                    A complete character illustration with the whole
+                    body visible. Perfect for OCs, adopts and character art.
+                </p>
+
+                <div class="price-options">
+
+                    <div class="price-line featured">
+                        <div>
+                            <strong>FULL RENDER</strong>
+                            <span>+ BACKGROUND</span>
+                        </div>
+                        <b>$150</b>
+                    </div>
+
+                    <div class="price-line">
+                        <div>
+                            <strong>FULL RENDER</strong>
+                        </div>
+                        <b>$130</b>
+                    </div>
+
+                    <div class="price-line">
+                        <div>
+                            <strong>SKETCH</strong>
+                            <span>WITH COLOR</span>
+                        </div>
+                        <b>$90</b>
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <span>✦ full character</span>
+                    <span>✦ detailed</span>
+                </div>
+
+            </article>
+
+
+            <!-- HALF BODY -->
+            <article class="price-card">
+
+                <div class="card-top">
+                    <span class="card-number">02</span>
+                    <span class="card-icon">♡</span>
+                </div>
+
+                <div class="example-image">
+                    <div class="image-placeholder">
+                        <span>✦</span>
+                        <small>HALF BODY</small>
+                        <span>✦</span>
+                    </div>
+                </div>
+
+                <div class="card-title-row">
+                    <h3>HALF BODY</h3>
+                    <span class="tiny-tag">02</span>
+                </div>
+
+                <p class="card-description">
+                    A character-focused illustration from the waist or
+                    hips up, with plenty of room for expressions and poses.
+                </p>
+
+                <div class="price-options">
+
+                    <div class="price-line featured">
+                        <div>
+                            <strong>FULL RENDER</strong>
+                            <span>+ BACKGROUND</span>
+                        </div>
+                        <b>$115</b>
+                    </div>
+
+                    <div class="price-line">
+                        <div>
+                            <strong>FULL RENDER</strong>
+                        </div>
+                        <b>$100</b>
+                    </div>
+
+                    <div class="price-line">
+                        <div>
+                            <strong>SKETCH</strong>
+                            <span>WITH COLOR</span>
+                        </div>
+                        <b>$70</b>
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <span>✦ waist up</span>
+                    <span>✦ expressive</span>
+                </div>
+
+            </article>
+
+
+            <!-- BUST UP -->
+            <article class="price-card">
+
+                <div class="card-top">
+                    <span class="card-number">03</span>
+                    <span class="card-icon">♡</span>
+                </div>
+
+                <div class="example-image">
+                    <div class="image-placeholder">
+                        <span>✦</span>
+                        <small>BUST UP / ICON</small>
+                        <span>✦</span>
+                    </div>
+                </div>
+
+                <div class="card-title-row">
+                    <h3>BUST UP / ICON</h3>
+                    <span class="tiny-tag">03</span>
+                </div>
+
+                <p class="card-description">
+                    Cute portrait-style artwork focused on the face,
+                    hairstyle and expression. Great for icons and profiles.
+                </p>
+
+                <div class="price-options">
+
+                    <div class="price-line featured">
+                        <div>
+                            <strong>FULL RENDER</strong>
+                            <span>+ BACKGROUND</span>
+                        </div>
+                        <b>$80</b>
+                    </div>
+
+                    <div class="price-line">
+                        <div>
+                            <strong>FULL RENDER</strong>
+                        </div>
+                        <b>$70</b>
+                    </div>
+
+                    <div class="price-line">
+                        <div>
+                            <strong>SKETCH</strong>
+                            <span>WITH COLOR</span>
+                        </div>
+                        <b>$50</b>
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <span>✦ icon friendly</span>
+                    <span>✦ cute portrait</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <!-- CHARACTER SHEETS -->
+    <div class="sheet-section">
+
+        <div class="section-heading">
+            <span class="heading-decoration">✧</span>
+
+            <div>
+                <span class="heading-mini">FOR CHARACTER DESIGN</span>
+                <h2>CHARACTER SHEETS</h2>
+            </div>
+
+            <span class="heading-decoration">✧</span>
+        </div>
+
+
+        <div class="sheet-layout">
+
+            <!-- decorative side -->
+            <div class="sheet-decoration">
+                <span>♡</span>
+                <div class="vertical-text">CHARACTER DESIGN</div>
+                <span>✦</span>
+            </div>
+
+
+            <div class="sheet-content">
+
+                <p class="sheet-intro">
+                    Need more than one view? Character sheets are perfect
+                    for presenting your OC, reference art or original design
+                    in a clean and detailed format.
+                </p>
+
+
+                <div class="sheet-prices">
+
+                    <div class="sheet-price">
+
+                        <div class="sheet-price-info">
+                            <span class="sheet-tag">02 SIDE</span>
+                            <strong>FULL RENDER</strong>
+                            <small>two-sided character sheet</small>
+                        </div>
+
+                        <div class="sheet-cost">$350</div>
+
+                    </div>
+
+
+                    <div class="sheet-price">
+
+                        <div class="sheet-price-info">
+                            <span class="sheet-tag">01 SIDE</span>
+                            <strong>FULL RENDER</strong>
+                            <small>one-sided character sheet</small>
+                        </div>
+
+                        <div class="sheet-cost">$300</div>
+
+                    </div>
+
+
+                    <div class="sheet-price">
+
+                        <div class="sheet-price-info">
+                            <span class="sheet-tag">02 SIDE</span>
+                            <strong>SKETCH WITH COLOR</strong>
+                            <small>two-sided colored sketch</small>
+                        </div>
+
+                        <div class="sheet-cost">$150</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- NOTES -->
+    <div class="price-bottom">
+
+        <div class="notes-box">
+
+            <div class="notes-title">
+                <span>✦</span>
+                PLEASE NOTE
+                <span>✦</span>
+            </div>
+
+            <ul>
+                <li>Prices may increase depending on character complexity.</li>
+                <li>Complex armor and detailed designs may require an extra fee.</li>
+                <li>Backgrounds are included only in the listed options.</li>
+                <li>Additional characters can be discussed separately.</li>
+                <li>Reference images are always appreciated!</li>
+            </ul>
+
+        </div>
+
+
+        <div class="order-box">
+
+            <span class="order-deco">♡</span>
+
+            <span class="order-mini">READY TO COMMISSION?</span>
+
+            <h3>LET'S MAKE<br>SOMETHING CUTE!</h3>
+
+            <p>
+                Have an idea in mind?
+                Send me your character and commission details ♡
+            </p>
+
+            <a href="#" class="order-button">
+                ORDER A COMMISSION
+                <span>→</span>
+            </a>
+
+            <span class="order-deco bottom">✦</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="price-footer">
+        <span>♡ thank you for supporting my art ♡</span>
+        <span>✦</span>
+        <span>all prices are in USD</span>
+    </div>
+
+</section>
