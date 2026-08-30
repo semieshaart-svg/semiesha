@@ -1,0 +1,398 @@
+/* =========================================================
+   ✦ TERMS OF SERVICE ✦
+   soft pink + lavender edition
+========================================================= */
+
+.tos-page {
+
+    width: min(1050px, calc(100% - 40px));
+
+    margin: 0 auto;
+
+    padding: 65px 0 80px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.tos-header {
+
+    position: relative;
+
+    padding: 55px 45px;
+
+    margin-bottom: 25px;
+
+    background: var(--paper);
+
+    border: 1px solid var(--border);
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.tos-kicker {
+
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: var(--pink-dark);
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.tos-header h1 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(40px, 6vw, 65px);
+
+    font-weight: 500;
+
+    line-height: 1.1;
+}
+
+.tos-header h1 span {
+
+    color: var(--pink);
+}
+
+.tos-line {
+
+    width: 60px;
+
+    height: 1px;
+
+    margin: 22px auto;
+
+    background: var(--pink);
+}
+
+.tos-header p {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   NOTICE
+========================================================= */
+
+.tos-notice {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+
+    padding: 18px 25px;
+
+    background: var(--pink-pale);
+
+    border: 1px solid var(--border);
+}
+
+.tos-notice > span {
+
+    color: var(--pink);
+
+    font-size: 17px;
+}
+
+.tos-notice p {
+
+    color: var(--muted);
+
+    font-size: 9px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TOS SECTIONS
+========================================================= */
+
+.tos-section {
+
+    display: grid;
+
+    grid-template-columns: 75px 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 15px;
+
+    padding: 30px;
+
+    background: var(--paper);
+
+    border: 1px solid var(--border);
+
+    transition: .25s ease;
+}
+
+.tos-section:hover {
+
+    transform: translateX(4px);
+
+    border-color: var(--pink);
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.tos-number {
+
+    color: var(--lavender-dark);
+
+    font-family: var(--serif);
+
+    font-size: 30px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.tos-content h2 {
+
+    margin-bottom: 17px;
+
+    font-family: var(--serif);
+
+    font-size: 25px;
+
+    font-weight: 500;
+}
+
+.tos-content h2 span {
+
+    color: var(--pink);
+
+    font-size: 17px;
+}
+
+.tos-content ul {
+
+    padding-left: 18px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    line-height: 1.9;
+}
+
+.tos-content li {
+
+    padding-left: 5px;
+
+    margin-bottom: 6px;
+}
+
+.tos-content li::marker {
+
+    color: var(--pink);
+}
+
+
+/* =========================================================
+   FINAL CARD
+========================================================= */
+
+.tos-final {
+
+    margin-top: 45px;
+
+    padding: 45px 30px;
+
+    background: var(--lavender-pale);
+
+    border: 1px solid var(--border);
+
+    text-align: center;
+}
+
+.tos-final-symbol {
+
+    margin-bottom: 12px;
+
+    color: var(--pink);
+
+    font-size: 24px;
+}
+
+.tos-final h2 {
+
+    margin-bottom: 10px;
+
+    font-family: var(--serif);
+
+    font-size: 29px;
+
+    font-weight: 500;
+}
+
+.tos-final p {
+
+    max-width: 550px;
+
+    margin: 0 auto 22px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+
+    line-height: 1.8;
+}
+
+.tos-button {
+
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    background: var(--paper);
+
+    border: 1px solid var(--pink);
+
+    color: var(--pink-dark);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    transition: .25s ease;
+}
+
+.tos-button:hover {
+
+    background: var(--pink);
+
+    color: white;
+}
+
+
+/* =========================================================
+   BOTTOM NAV
+========================================================= */
+
+.tos-bottom-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 45px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+.tos-bottom-nav a {
+
+    color: var(--muted);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-decoration: none;
+
+    transition: .2s ease;
+}
+
+.tos-bottom-nav a:hover {
+
+    color: var(--pink-dark);
+}
+
+.tos-bottom-nav span {
+
+    color: var(--pink);
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .tos-page {
+
+        width: min(100% - 25px, 1050px);
+
+        padding-top: 35px;
+    }
+
+    .tos-header {
+
+        padding: 40px 22px;
+    }
+
+    .tos-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        padding: 25px 20px;
+    }
+
+    .tos-number {
+
+        font-size: 20px;
+    }
+
+    .tos-content h2 {
+
+        font-size: 23px;
+    }
+
+    .tos-bottom-nav {
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+}
