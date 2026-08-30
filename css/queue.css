@@ -1,0 +1,1395 @@
+/* =========================================================
+   ✦ STATUS & QUEUE PAGE ✦
+   Artist Portfolio — red editorial style
+========================================================= */
+
+.status-page {
+
+    --status-accent: #e5383b;
+    --status-soft: #fff1f2;
+    --status-pale: #fff8f8;
+    --status-dark: #252326;
+    --status-muted: #8b8588;
+    --status-border: #eadfe1;
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 55px 35px 70px;
+
+    color: var(--status-dark);
+
+    background:
+        radial-gradient(
+            circle at 8% 8%,
+            rgba(229, 56, 59, .07) 0 2px,
+            transparent 3px
+        ),
+        radial-gradient(
+            circle at 93% 38%,
+            rgba(229, 56, 59, .06) 0 2px,
+            transparent 3px
+        ),
+        #fff;
+
+    font-family:
+        "Montserrat",
+        "Arial",
+        sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+.status-page *,
+.status-page *::before,
+.status-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.status-header {
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 235px;
+
+    margin-bottom: 25px;
+    padding: 40px;
+
+    border: 1px solid var(--status-border);
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            var(--status-soft) 100%
+        );
+
+    text-align: center;
+}
+
+
+.status-header::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    top: -210px;
+    right: -70px;
+
+    border: 1px solid rgba(229, 56, 59, .13);
+
+    border-radius: 50%;
+}
+
+
+.status-header::after {
+
+    content: "01  ·  02  ·  03  ·  04  ·  05";
+
+    position: absolute;
+
+    left: 25px;
+    bottom: 18px;
+
+    color: #c9c1c3;
+
+    font-size: 7px;
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.status-header-content {
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.status-kicker {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--status-accent);
+
+    font-size: 8px;
+    font-weight: 900;
+
+    letter-spacing: 4px;
+}
+
+
+.status-header h1 {
+
+    margin: 0;
+
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.status-header h1 span {
+
+    color: var(--status-accent);
+
+    font-family: Georgia, serif;
+
+    font-style: italic;
+}
+
+
+.status-header p {
+
+    margin: 18px 0 0;
+
+    color: var(--status-muted);
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    letter-spacing: 1px;
+}
+
+
+.status-header-deco {
+
+    position: absolute;
+
+    left: 30px;
+    top: 27px;
+
+    color: var(--status-accent);
+
+    font-size: 25px;
+
+    opacity: .5;
+}
+
+
+.status-header-heart {
+
+    position: absolute;
+
+    right: 35px;
+    bottom: 30px;
+
+    color: var(--status-accent);
+
+    font-size: 35px;
+
+    opacity: .13;
+}
+
+
+/* =========================================================
+   CURRENT STATUS
+========================================================= */
+
+.current-status {
+
+    display: grid;
+
+    grid-template-columns: 55px 1fr auto;
+
+    align-items: center;
+
+    gap: 17px;
+
+    margin-bottom: 75px;
+
+    padding: 22px 25px;
+
+    border: 1px solid var(--status-border);
+
+    background: #fff;
+}
+
+
+.current-status-icon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid var(--status-accent);
+
+    border-radius: 50%;
+
+    color: var(--status-accent);
+
+    font-size: 18px;
+}
+
+
+.current-status-text > span {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--status-accent);
+
+    font-size: 7px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.current-status-text h2 {
+
+    display: inline-block;
+
+    margin: 0 0 4px;
+
+    font-size: 18px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.current-status-text p {
+
+    margin: 0;
+
+    color: var(--status-muted);
+
+    font-size: 8px;
+
+    line-height: 1.7;
+}
+
+
+.status-open-badge {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 13px;
+
+    border: 1px solid #b8d9bf;
+
+    background: #f5fbf6;
+
+    color: #50855b;
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.status-open-badge i {
+
+    width: 7px;
+    height: 7px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #5e9b69;
+
+    box-shadow:
+        0 0 0 3px rgba(94, 155, 105, .12);
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.status-section-title {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 22px;
+
+    margin-bottom: 32px;
+
+    text-align: center;
+}
+
+
+.status-section-title > span {
+
+    color: var(--status-accent);
+
+    font-size: 21px;
+
+    opacity: .5;
+}
+
+
+.status-section-title small {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--status-accent);
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.status-section-title h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process-section {
+
+    margin-bottom: 80px;
+}
+
+
+.process-timeline {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 0;
+}
+
+
+.process-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 22px;
+
+    left: 10%;
+    right: 10%;
+
+    height: 1px;
+
+    background: var(--status-border);
+
+    z-index: 0;
+}
+
+
+.process-step {
+
+    position: relative;
+
+    z-index: 1;
+
+    text-align: center;
+}
+
+
+.process-top {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+
+.process-dot {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid var(--status-border);
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #bdb6b8;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        color .2s ease;
+}
+
+
+.process-step.active .process-dot {
+
+    border-color: var(--status-accent);
+
+    background: var(--status-accent);
+
+    color: #fff;
+}
+
+
+.process-number {
+
+    position: absolute;
+
+    top: -16px;
+
+    color: #c8c1c3;
+
+    font-size: 6px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.process-step.active .process-number {
+
+    color: var(--status-accent);
+}
+
+
+.process-content {
+
+    padding: 0 10px;
+}
+
+
+.process-content > span {
+
+    color: var(--status-accent);
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.process-content h3 {
+
+    margin: 7px 0;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.process-content p {
+
+    margin: 0;
+
+    color: var(--status-muted);
+
+    font-size: 7px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   QUEUE SECTION
+========================================================= */
+
+.queue-section {
+
+    margin-bottom: 70px;
+}
+
+
+/* Intro */
+
+.queue-intro {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    border: 1px solid var(--status-border);
+
+    background: var(--status-pale);
+}
+
+
+.queue-intro p {
+
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--status-muted);
+
+    font-size: 8px;
+
+    line-height: 1.8;
+}
+
+
+.queue-count {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding-left: 20px;
+
+    border-left: 1px solid var(--status-border);
+}
+
+
+.queue-count strong {
+
+    color: var(--status-accent);
+
+    font-size: 29px;
+
+    font-weight: 900;
+}
+
+
+.queue-count span {
+
+    color: var(--status-muted);
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    line-height: 1.5;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   QUEUE ITEMS
+========================================================= */
+
+.queue-item {
+
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 8px;
+
+    padding: 18px;
+
+    border: 1px solid var(--status-border);
+
+    background: #fff;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.queue-item:hover {
+
+    transform: translateX(4px);
+
+    box-shadow:
+        0 8px 25px rgba(50, 30, 35, .05);
+}
+
+
+.queue-index {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid var(--status-border);
+
+    color: var(--status-accent);
+
+    font-size: 8px;
+
+    font-weight: 900;
+}
+
+
+.queue-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.queue-title > div > span {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #aaa2a5;
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.queue-title h3 {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    font-weight: 900;
+}
+
+
+.queue-status {
+
+    flex-shrink: 0;
+
+    padding: 6px 9px;
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.queue-status.progress {
+
+    background: var(--status-soft);
+
+    color: var(--status-accent);
+}
+
+
+.queue-status.sketch {
+
+    background: #f7f2ff;
+
+    color: #8464a7;
+}
+
+
+.queue-status.waiting {
+
+    background: #fff8e9;
+
+    color: #a17b37;
+}
+
+
+.queue-status.next {
+
+    background: #f2f4f5;
+
+    color: #777;
+}
+
+
+.queue-type {
+
+    margin-top: 7px;
+
+    color: var(--status-muted);
+
+    font-size: 6px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.queue-bar {
+
+    width: 100%;
+
+    height: 5px;
+
+    margin-top: 13px;
+
+    overflow: hidden;
+
+    background: #f2ebec;
+}
+
+
+.queue-bar-fill {
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--status-accent),
+            #f07b7e
+        );
+
+    transition: width .5s ease;
+}
+
+
+.queue-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 7px;
+
+    color: #aaa2a5;
+
+    font-size: 6px;
+
+    font-weight: 800;
+
+    letter-spacing: .7px;
+}
+
+
+.queue-bottom span:first-child {
+
+    color: var(--status-accent);
+}
+
+
+/* =========================================================
+   EMPTY QUEUE SLOT
+========================================================= */
+
+.queue-empty {
+
+    display: grid;
+
+    grid-template-columns: 45px 1fr auto;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 15px;
+
+    padding: 17px 18px;
+
+    border: 1px dashed rgba(229, 56, 59, .4);
+
+    background: var(--status-pale);
+}
+
+
+.empty-icon {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+
+    border: 1px solid var(--status-accent);
+
+    border-radius: 50%;
+
+    color: var(--status-accent);
+
+    font-size: 14px;
+}
+
+
+.queue-empty div:nth-child(2) span {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #aaa2a5;
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.queue-empty div:nth-child(2) strong {
+
+    color: var(--status-accent);
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.empty-arrow {
+
+    color: var(--status-accent);
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   LEGEND
+========================================================= */
+
+.status-legend {
+
+    margin-bottom: 18px;
+
+    padding: 22px 25px;
+
+    border: 1px solid var(--status-border);
+
+    background: #fff;
+}
+
+
+.legend-title {
+
+    margin-bottom: 18px;
+
+    color: var(--status-dark);
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.legend-title span {
+
+    margin-right: 8px;
+
+    color: var(--status-accent);
+}
+
+
+.legend-items {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.legend-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.legend-dot {
+
+    width: 9px;
+    height: 9px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #bbb;
+}
+
+
+.legend-dot.done {
+
+    background: #76a37d;
+}
+
+
+.legend-dot.progress-dot {
+
+    background: var(--status-accent);
+}
+
+
+.legend-dot.waiting-dot {
+
+    background: #c39a51;
+}
+
+
+.legend-dot.next-dot {
+
+    background: #999;
+}
+
+
+.legend-item strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 7px;
+
+    font-weight: 900;
+}
+
+
+.legend-item span {
+
+    display: block;
+
+    color: var(--status-muted);
+
+    font-size: 6px;
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.status-note {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 35px;
+
+    padding: 17px 20px;
+
+    border: 1px solid var(--status-border);
+
+    background: var(--status-pale);
+}
+
+
+.status-note-icon {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
+
+    border: 1px solid var(--status-accent);
+
+    border-radius: 50%;
+
+    color: var(--status-accent);
+
+    font-size: 9px;
+
+    font-weight: 900;
+}
+
+
+.status-note strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--status-accent);
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.status-note p {
+
+    margin: 0;
+
+    color: var(--status-muted);
+
+    font-size: 8px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.status-footer {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 13px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--status-border);
+
+    color: #aaa2a5;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.status-footer span {
+
+    color: var(--status-accent);
+}
+
+
+.status-footer p {
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .status-page {
+
+        padding: 40px 20px 55px;
+    }
+
+
+    .process-timeline {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .process-timeline::before {
+
+        top: 0;
+        bottom: 0;
+
+        left: 22px;
+        right: auto;
+
+        width: 1px;
+        height: auto;
+    }
+
+
+    .process-step {
+
+        display: grid;
+
+        grid-template-columns: 45px 1fr;
+
+        gap: 15px;
+
+        text-align: left;
+    }
+
+
+    .process-top {
+
+        margin: 0;
+    }
+
+
+    .process-number {
+
+        top: -7px;
+        left: 50px;
+    }
+
+
+    .process-content {
+
+        padding: 0;
+    }
+
+
+    .legend-items {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .status-page {
+
+        padding: 30px 12px 45px;
+    }
+
+
+    .status-header {
+
+        min-height: 200px;
+
+        padding: 30px 20px;
+    }
+
+
+    .status-header h1 {
+
+        font-size: 40px;
+    }
+
+
+    .status-header p {
+
+        font-size: 8px;
+    }
+
+
+    .status-header-deco {
+
+        left: 18px;
+        top: 18px;
+
+        font-size: 18px;
+    }
+
+
+    .status-header-heart {
+
+        right: 18px;
+        bottom: 18px;
+
+        font-size: 27px;
+    }
+
+
+    .current-status {
+
+        grid-template-columns: 45px 1fr;
+
+        gap: 13px;
+
+        margin-bottom: 55px;
+
+        padding: 17px;
+    }
+
+
+    .status-open-badge {
+
+        grid-column: 1 / -1;
+
+        justify-self: start;
+
+        margin-left: 58px;
+    }
+
+
+    .status-section-title {
+
+        gap: 12px;
+    }
+
+
+    .status-section-title h2 {
+
+        font-size: 20px;
+    }
+
+
+    .process-content h3 {
+
+        font-size: 10px;
+    }
+
+
+    .queue-intro {
+
+        align-items: flex-start;
+
+        padding: 16px;
+    }
+
+
+    .queue-count {
+
+        display: none;
+    }
+
+
+    .queue-item {
+
+        grid-template-columns: 38px 1fr;
+
+        gap: 12px;
+
+        padding: 14px;
+    }
+
+
+    .queue-title {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .queue-title h3 {
+
+        font-size: 11px;
+    }
+
+
+    .queue-bottom {
+
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+
+    .legend-items {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .status-legend {
+
+        padding: 18px;
+    }
+
+
+    .status-note {
+
+        padding: 15px;
+    }
+
+
+    .status-footer {
+
+        flex-wrap: wrap;
+
+        text-align: center;
+
+        font-size: 7px;
+    }
+}
