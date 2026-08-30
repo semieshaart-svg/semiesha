@@ -1,22 +1,31 @@
 /* =========================================================
    ✦ PRICE / COMMISSIONS PAGE ✦
+   soft pink lavender edition
 ========================================================= */
 
 .price-page {
-    --price-accent: #e5383b;
-    --price-soft: #fff1f2;
-    --price-pale: #fff8f8;
-    --price-dark: #252326;
-    --price-muted: #8b8588;
-    --price-border: #eadfe1;
+    --price-accent: #b99abb;
+    --price-soft: #f4edf7;
+    --price-pale: #fbf8fc;
+    --price-dark: #302c33;
+    --price-muted: #8d858f;
+    --price-border: #e4dce8;
 
     max-width: 1180px;
     margin: 0 auto;
     padding: 55px 35px 70px;
 
     background:
-        radial-gradient(circle at 8% 10%, rgba(229,56,59,.07) 0 2px, transparent 3px),
-        radial-gradient(circle at 90% 30%, rgba(229,56,59,.06) 0 2px, transparent 3px),
+        radial-gradient(
+            circle at 8% 10%,
+            rgba(185,154,187,.08) 0 2px,
+            transparent 3px
+        ),
+        radial-gradient(
+            circle at 90% 30%,
+            rgba(185,154,187,.07) 0 2px,
+            transparent 3px
+        ),
         #fff;
 
     color: var(--price-dark);
@@ -28,6 +37,7 @@
 
     box-sizing: border-box;
 }
+
 
 .price-page *,
 .price-page *::before,
@@ -61,6 +71,7 @@
     text-transform: uppercase;
 }
 
+
 .price-page-nav a {
     display: inline-flex;
     align-items: center;
@@ -87,6 +98,7 @@
         box-shadow .25s ease;
 }
 
+
 .price-page-nav a:hover {
     color: var(--price-accent);
 
@@ -100,6 +112,7 @@
         0 6px 16px rgba(50,30,35,.05);
 }
 
+
 .price-page-nav a.active {
     color: var(--price-accent);
 
@@ -109,6 +122,7 @@
 
     font-weight: 800;
 }
+
 
 .price-page-nav span {
     color: var(--price-accent);
@@ -147,19 +161,22 @@
     overflow: hidden;
 }
 
+
 .price-header::before {
     content: "";
+
     position: absolute;
 
     width: 180px;
     height: 180px;
 
-    border: 1px solid rgba(229,56,59,.15);
+    border: 1px solid rgba(185,154,187,.15);
     border-radius: 50%;
 
     right: -60px;
     top: -70px;
 }
+
 
 .price-header::after {
     content: "♡  ✦  ♡  ✧  ♡";
@@ -176,11 +193,14 @@
     letter-spacing: 7px;
 }
 
+
 .price-header > div:nth-child(2) {
     text-align: center;
+
     position: relative;
     z-index: 2;
 }
+
 
 .price-small-title {
     display: block;
@@ -194,6 +214,7 @@
     letter-spacing: 4px;
 }
 
+
 .price-header h1 {
     margin: 0;
 
@@ -206,6 +227,7 @@
     letter-spacing: 3px;
 }
 
+
 .price-header p {
     margin: 18px 0 0;
 
@@ -216,6 +238,7 @@
     letter-spacing: .5px;
 }
 
+
 .price-header-deco,
 .price-header-star {
     position: absolute;
@@ -225,10 +248,12 @@
     font-size: 25px;
 }
 
+
 .price-header-deco {
     left: 30px;
     top: 25px;
 }
+
 
 .price-header-star {
     right: 38px;
@@ -250,8 +275,10 @@
     padding: 25px 30px 30px;
 
     border: 1px solid var(--price-border);
+
     background: var(--price-pale);
 }
+
 
 .section-label {
     display: flex;
@@ -268,12 +295,14 @@
     letter-spacing: 4px;
 }
 
+
 .draw-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 
 .draw-item {
     display: flex;
@@ -298,9 +327,11 @@
         color .2s ease;
 }
 
+
 .draw-item span {
     color: var(--price-accent);
 }
+
 
 .draw-item:hover {
     transform: translateY(-3px);
@@ -318,6 +349,7 @@
     margin-bottom: 70px;
 }
 
+
 .section-heading {
     display: flex;
     align-items: center;
@@ -329,9 +361,11 @@
     text-align: center;
 }
 
+
 .section-heading > div {
     min-width: 180px;
 }
+
 
 .heading-mini {
     display: block;
@@ -345,6 +379,7 @@
     letter-spacing: 3px;
 }
 
+
 .section-heading h2 {
     margin: 0;
 
@@ -354,6 +389,7 @@
     font-weight: 900;
     letter-spacing: 2px;
 }
+
 
 .heading-decoration {
     color: var(--price-accent);
@@ -376,6 +412,7 @@
     gap: 18px;
 }
 
+
 .price-card {
     position: relative;
 
@@ -391,14 +428,16 @@
         border-color .25s ease;
 }
 
+
 .price-card:hover {
     transform: translateY(-7px);
 
-    border-color: rgba(229,56,59,.45);
+    border-color: rgba(185,154,187,.45);
 
     box-shadow:
         0 18px 40px rgba(50,30,35,.08);
 }
+
 
 .card-top {
     display: flex;
@@ -408,6 +447,7 @@
     margin-bottom: 14px;
 }
 
+
 .card-number {
     color: #c7bfc1;
 
@@ -416,6 +456,7 @@
     letter-spacing: 2px;
 }
 
+
 .card-icon {
     color: var(--price-accent);
 
@@ -423,7 +464,9 @@
 }
 
 
-/* IMAGE PLACEHOLDER */
+/* =========================================================
+   IMAGE
+========================================================= */
 
 .example-image {
     position: relative;
@@ -442,8 +485,9 @@
             #fff
         );
 
-    border: 1px solid #f0e5e7;
+    border: 1px solid #eee5f0;
 }
+
 
 .example-image::before {
     content: "✦";
@@ -459,6 +503,7 @@
     font-size: 12px;
 }
 
+
 .example-image::after {
     content: "♡";
 
@@ -473,22 +518,27 @@
     font-size: 18px;
 }
 
+
 .image-placeholder {
     height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 13px;
+
     flex-direction: column;
 
     color: var(--price-accent);
 }
 
+
 .image-placeholder span {
     font-size: 13px;
     opacity: .5;
 }
+
 
 .image-placeholder small {
     font-size: 9px;
@@ -497,7 +547,9 @@
 }
 
 
-/* CARD TITLE */
+/* =========================================================
+   CARD TITLE
+========================================================= */
 
 .card-title-row {
     display: flex;
@@ -507,6 +559,7 @@
     margin-bottom: 10px;
 }
 
+
 .card-title-row h3 {
     margin: 0;
 
@@ -514,6 +567,7 @@
     font-weight: 900;
     letter-spacing: 1px;
 }
+
 
 .tiny-tag {
     padding: 4px 7px;
@@ -527,6 +581,7 @@
     letter-spacing: 1px;
 }
 
+
 .card-description {
     min-height: 57px;
 
@@ -539,11 +594,14 @@
 }
 
 
-/* PRICE OPTIONS */
+/* =========================================================
+   PRICE OPTIONS
+========================================================= */
 
 .price-options {
     border-top: 1px solid var(--price-border);
 }
+
 
 .price-line {
     display: flex;
@@ -557,9 +615,11 @@
     border-bottom: 1px solid var(--price-border);
 }
 
+
 .price-line:last-child {
     border-bottom: 0;
 }
+
 
 .price-line > div {
     display: flex;
@@ -567,11 +627,13 @@
     gap: 3px;
 }
 
+
 .price-line strong {
     font-size: 9px;
     font-weight: 900;
     letter-spacing: .7px;
 }
+
 
 .price-line span {
     color: #aaa2a5;
@@ -581,6 +643,7 @@
     letter-spacing: 1px;
 }
 
+
 .price-line b {
     color: var(--price-accent);
 
@@ -588,13 +651,16 @@
     font-weight: 900;
 }
 
+
 .price-line.featured {
     margin: 0 -4px;
+
     padding-left: 8px;
     padding-right: 8px;
 
     background: var(--price-soft);
 }
+
 
 .card-footer {
     display: flex;
@@ -619,6 +685,7 @@
     margin-bottom: 65px;
 }
 
+
 .sheet-layout {
     display: grid;
 
@@ -636,6 +703,7 @@
         );
 }
 
+
 .sheet-decoration {
     display: flex;
     flex-direction: column;
@@ -649,9 +717,11 @@
     color: var(--price-accent);
 }
 
+
 .sheet-decoration span {
     font-size: 18px;
 }
+
 
 .vertical-text {
     writing-mode: vertical-rl;
@@ -663,9 +733,11 @@
     letter-spacing: 3px;
 }
 
+
 .sheet-content {
     padding: 35px 40px;
 }
+
 
 .sheet-intro {
     max-width: 650px;
@@ -678,11 +750,14 @@
     line-height: 1.8;
 }
 
+
 .sheet-prices {
     display: flex;
     flex-direction: column;
+
     gap: 10px;
 }
+
 
 .sheet-price {
     display: flex;
@@ -698,15 +773,19 @@
     transition: transform .2s ease;
 }
 
+
 .sheet-price:hover {
     transform: translateX(5px);
 }
 
+
 .sheet-price-info {
     display: flex;
     align-items: center;
+
     gap: 14px;
 }
+
 
 .sheet-tag {
     padding: 6px 8px;
@@ -720,17 +799,20 @@
     letter-spacing: 1px;
 }
 
+
 .sheet-price-info strong {
     font-size: 10px;
     font-weight: 900;
     letter-spacing: 1px;
 }
 
+
 .sheet-price-info small {
     color: #aaa2a5;
 
     font-size: 8px;
 }
+
 
 .sheet-cost {
     color: var(--price-accent);
@@ -755,13 +837,16 @@
     margin-bottom: 35px;
 }
 
+
 .notes-box,
 .order-box {
     border: 1px solid var(--price-border);
 }
 
 
-/* NOTES */
+/* =========================================================
+   NOTES
+========================================================= */
 
 .notes-box {
     padding: 28px;
@@ -769,9 +854,11 @@
     background: #fff;
 }
 
+
 .notes-title {
     display: flex;
     align-items: center;
+
     gap: 10px;
 
     margin-bottom: 20px;
@@ -783,12 +870,14 @@
     letter-spacing: 2px;
 }
 
+
 .notes-box ul {
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
+
 
 .notes-box li {
     position: relative;
@@ -801,6 +890,7 @@
     line-height: 1.6;
 }
 
+
 .notes-box li::before {
     content: "♡";
 
@@ -811,13 +901,16 @@
 }
 
 
-/* ORDER */
+/* =========================================================
+   ORDER
+========================================================= */
 
 .order-box {
     position: relative;
 
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
 
@@ -830,6 +923,7 @@
     background: var(--price-soft);
 }
 
+
 .order-box::before {
     content: "";
 
@@ -838,12 +932,13 @@
     width: 200px;
     height: 200px;
 
-    border: 1px solid rgba(229,56,59,.13);
+    border: 1px solid rgba(185,154,187,.13);
     border-radius: 50%;
 
     top: -100px;
     right: -80px;
 }
+
 
 .order-box::after {
     content: "";
@@ -853,12 +948,13 @@
     width: 130px;
     height: 130px;
 
-    border: 1px solid rgba(229,56,59,.1);
+    border: 1px solid rgba(185,154,187,.10);
     border-radius: 50%;
 
     bottom: -70px;
     left: -50px;
 }
+
 
 .order-deco {
     position: absolute;
@@ -872,6 +968,7 @@
     opacity: .35;
 }
 
+
 .order-deco.bottom {
     top: auto;
     left: auto;
@@ -879,6 +976,7 @@
     right: 20px;
     bottom: 15px;
 }
+
 
 .order-mini {
     position: relative;
@@ -890,6 +988,7 @@
     font-weight: 900;
     letter-spacing: 3px;
 }
+
 
 .order-box h3 {
     position: relative;
@@ -903,6 +1002,7 @@
     font-weight: 900;
     letter-spacing: 1px;
 }
+
 
 .order-box p {
     position: relative;
@@ -918,12 +1018,14 @@
     line-height: 1.7;
 }
 
+
 .order-button {
     position: relative;
     z-index: 2;
 
     display: inline-flex;
     align-items: center;
+
     gap: 13px;
 
     padding: 12px 19px;
@@ -946,9 +1048,11 @@
         transform .2s ease;
 }
 
+
 .order-button span {
     font-size: 14px;
 }
+
 
 .order-button:hover {
     transform: translateY(-3px);
@@ -967,6 +1071,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 18px;
 
     padding-top: 22px;
@@ -980,6 +1085,7 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
+
 
 .price-footer span:nth-child(2) {
     color: var(--price-accent);
@@ -996,15 +1102,20 @@
         padding: 40px 20px 55px;
     }
 
+
     .price-grid {
         grid-template-columns: 1fr;
     }
 
+
     .price-card {
         max-width: 520px;
+
         width: 100%;
+
         margin: auto;
     }
+
 
     .price-bottom {
         grid-template-columns: 1fr;
@@ -1019,98 +1130,137 @@
         padding: 30px 12px 45px;
     }
 
+
     /* PAGE NAVIGATION */
 
     .price-page-nav {
         gap: 6px;
+
         margin-bottom: 24px;
 
         font-size: 9px;
         letter-spacing: 1.5px;
     }
 
+
     .price-page-nav a {
         min-width: 70px;
+
         padding: 8px 13px;
     }
+
 
     .price-page-nav span {
         font-size: 10px;
     }
 
 
+    /* HEADER */
+
     .price-header {
         padding: 35px 20px;
+
         min-height: 210px;
     }
+
 
     .price-header-deco {
         left: 15px;
     }
+
 
     .price-header-star {
         right: 15px;
         top: 55px;
     }
 
+
+    /* WILL DRAW */
+
     .draw-box {
         padding: 22px 15px;
     }
+
 
     .draw-list {
         gap: 7px;
     }
 
+
     .draw-item {
         padding: 8px 12px;
+
         font-size: 8px;
     }
+
+
+    /* SECTION HEADINGS */
 
     .section-heading {
         gap: 10px;
     }
 
+
     .section-heading h2 {
         font-size: 20px;
     }
+
 
     .heading-decoration {
         font-size: 18px;
     }
 
+
+    /* IMAGE */
+
     .example-image {
         height: 150px;
     }
+
+
+    /* CHARACTER SHEETS */
 
     .sheet-layout {
         grid-template-columns: 45px 1fr;
     }
 
+
     .sheet-content {
         padding: 25px 18px;
     }
 
+
     .sheet-price {
         align-items: flex-start;
+
         gap: 15px;
     }
 
+
     .sheet-price-info {
         flex-wrap: wrap;
+
         gap: 7px 10px;
     }
+
 
     .sheet-price-info small {
         width: 100%;
     }
 
+
     .sheet-cost {
         font-size: 19px;
     }
 
+
+    /* FOOTER */
+
     .price-footer {
         flex-wrap: wrap;
+
         gap: 9px;
+
         text-align: center;
     }
 
