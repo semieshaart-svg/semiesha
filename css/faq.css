@@ -1,952 +1,1142 @@
-<!-- =========================================================
-     ✦ FAQ PAGE ✦
-========================================================= -->
+/* =========================================================
+   ✦ FAQ PAGE — SEMI ✦
+   clean editorial / soft artist portfolio style
+   accent: #e5383b
+========================================================= */
 
-<section class="faq-page">
 
-    <!-- =====================================================
-         HEADER
-    ===================================================== -->
+/* =========================================================
+   VARIABLES
+========================================================= */
 
-    <div class="faq-header">
+.faq-page {
+    --faq-accent: #e5383b;
+    --faq-accent-soft: #fff1f2;
+    --faq-pale: #fff8f8;
 
-        <span class="faq-header-deco left">✦</span>
+    --faq-dark: #252326;
+    --faq-text: #4b4749;
+    --faq-muted: #8b8588;
 
-        <div class="faq-header-content">
+    --faq-border: #eadfe1;
+    --faq-white: #ffffff;
 
-            <span class="faq-kicker">
-                QUESTIONS · ANSWERS · INFO
-            </span>
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 30px 80px;
 
-            <h1>
-                FAQ <span>♡</span>
-            </h1>
+    color: var(--faq-dark);
+    font-family: "DM Sans", sans-serif;
 
-            <p>
-                everything you might want to know
-                <br>
-                before ordering or working with me ✦
-            </p>
+    box-sizing: border-box;
+}
 
-        </div>
+.faq-page *,
+.faq-page *::before,
+.faq-page *::after {
+    box-sizing: border-box;
+}
 
-        <span class="faq-header-deco right">♡</span>
 
-    </div>
+/* =========================================================
+   HEADER
+========================================================= */
 
+.faq-header {
+    position: relative;
 
-    <!-- =====================================================
-         QUICK NAV
-    ===================================================== -->
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    <div class="faq-nav">
+    min-height: 285px;
 
-        <a href="#adopts" class="faq-nav-item">
-            <span>01</span>
-            ADOPTS
-        </a>
+    margin-bottom: 35px;
+    padding: 55px 40px;
 
-        <a href="#commissions" class="faq-nav-item">
-            <span>02</span>
-            COMMISSIONS
-        </a>
+    background:
+        linear-gradient(
+            135deg,
+            #fff8f8 0%,
+            #ffffff 50%,
+            #fff6f7 100%
+        );
 
-        <a href="#commercial" class="faq-nav-item">
-            <span>03</span>
-            COMMERCIAL
-        </a>
+    border: 1px solid var(--faq-border);
 
-        <a href="#collabs" class="faq-nav-item">
-            <span>04</span>
-            COLLABS
-        </a>
+    overflow: hidden;
+}
 
-        <a href="#payment" class="faq-nav-item">
-            <span>05</span>
-            PAYMENT
-        </a>
 
-    </div>
+/* subtle decorative circles */
 
+.faq-header::before {
+    content: "";
 
-    <!-- =====================================================
-         INTRO NOTE
-    ===================================================== -->
+    position: absolute;
 
-    <div class="faq-note">
+    width: 220px;
+    height: 220px;
 
-        <div class="faq-note-icon">♡</div>
+    top: -120px;
+    left: -100px;
 
-        <div>
+    border: 1px solid var(--faq-accent);
+    border-radius: 50%;
 
-            <span class="faq-note-title">
-                BEFORE YOU ORDER
-            </span>
+    opacity: .08;
+}
 
-            <p>
-                Please read through the FAQ before sending an
-                inquiry. If your question isn't answered here,
-                feel free to contact me directly!
-            </p>
+.faq-header::after {
+    content: "";
 
-        </div>
+    position: absolute;
 
-        <span class="faq-note-star">✦</span>
+    width: 280px;
+    height: 280px;
 
-    </div>
+    right: -150px;
+    bottom: -170px;
 
+    border: 1px solid var(--faq-accent);
+    border-radius: 50%;
 
-    <!-- =====================================================
-         ADOPTS
-    ===================================================== -->
+    opacity: .08;
+}
 
-    <div class="faq-category" id="adopts">
 
-        <div class="faq-category-heading">
+/* header content */
 
-            <div class="faq-category-number">
-                01
-            </div>
+.faq-header-content {
+    position: relative;
+    z-index: 2;
 
-            <div>
-                <span>CHARACTER SALES</span>
-                <h2>ADOPTS</h2>
-            </div>
+    max-width: 650px;
 
-            <div class="faq-category-symbol">
-                ♡
-            </div>
+    text-align: center;
+}
 
-        </div>
 
+/* tiny title */
 
-        <div class="faq-list">
+.faq-kicker {
+    display: block;
 
+    margin-bottom: 16px;
 
-            <details class="faq-item" open>
+    color: var(--faq-accent);
 
-                <summary>
+    font-size: 10px;
+    font-weight: 600;
 
-                    <span class="faq-q-number">01</span>
+    letter-spacing: 3px;
+}
 
-                    <strong>
-                        How do adopts work?
-                    </strong>
 
-                    <span class="faq-plus">+</span>
+/* FAQ */
 
-                </summary>
+.faq-header h1 {
+    margin: 0;
 
-                <div class="faq-answer">
+    font-family: "Playfair Display", serif;
 
-                    <p>
-                        Each adopt will have its own rules, price
-                        and payment information. Please read the
-                        individual adopt description carefully
-                        before claiming.
-                    </p>
+    font-size: clamp(58px, 8vw, 92px);
+    font-weight: 500;
 
-                    <p>
-                        Once payment has been received, the character
-                        and any included files will be transferred
-                        to the new owner.
-                    </p>
+    line-height: .95;
 
-                </div>
+    letter-spacing: -4px;
+}
 
-            </details>
+.faq-header h1 span {
+    color: var(--faq-accent);
 
+    font-style: italic;
 
-            <details class="faq-item">
+    letter-spacing: -2px;
+}
 
-                <summary>
 
-                    <span class="faq-q-number">02</span>
+/* description */
 
-                    <strong>
-                        Can I resell an adopt?
-                    </strong>
+.faq-header p {
+    margin: 20px 0 0;
 
-                    <span class="faq-plus">+</span>
+    color: var(--faq-muted);
 
-                </summary>
+    font-size: 13px;
+    line-height: 1.8;
+}
 
-                <div class="faq-answer">
 
-                    <p>
-                        Reselling rules may vary depending on the
-                        adopt. Please check the specific character's
-                        terms before reselling.
-                    </p>
+/* decorations */
 
-                    <p>
-                        Do not sell a character for more than you
-                        originally paid unless additional commissioned
-                        artwork is included in the new price.
-                    </p>
+.faq-header-deco {
+    position: absolute;
+    z-index: 1;
 
-                </div>
+    color: var(--faq-accent);
 
-            </details>
+    font-family: "Playfair Display", serif;
 
+    opacity: .18;
 
-            <details class="faq-item">
+    pointer-events: none;
+}
 
-                <summary>
+.faq-header-deco.left {
+    top: 35px;
+    left: 45px;
 
-                    <span class="faq-q-number">03</span>
+    font-size: 46px;
+}
 
-                    <strong>
-                        Can I change the design?
-                    </strong>
+.faq-header-deco.right {
+    right: 50px;
+    bottom: 30px;
 
-                    <span class="faq-plus">+</span>
+    font-size: 58px;
+}
 
-                </summary>
 
-                <div class="faq-answer">
+/* =========================================================
+   QUICK NAV
+========================================================= */
 
-                    <p>
-                        Small design changes are generally fine,
-                        but please keep the original character
-                        recognizable unless the adopt's rules say
-                        otherwise.
-                    </p>
+.faq-nav {
+    display: grid;
 
-                </div>
+    grid-template-columns: repeat(5, 1fr);
 
-            </details>
+    margin-bottom: 35px;
 
+    border-top: 1px solid var(--faq-border);
+    border-bottom: 1px solid var(--faq-border);
+}
 
-            <details class="faq-item">
 
-                <summary>
+.faq-nav-item {
+    position: relative;
 
-                    <span class="faq-q-number">04</span>
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-                    <strong>
-                        Do adopts come with commercial rights?
-                    </strong>
+    gap: 9px;
 
-                    <span class="faq-plus">+</span>
+    min-height: 62px;
 
-                </summary>
+    padding: 10px;
 
-                <div class="faq-answer">
+    color: var(--faq-dark);
 
-                    <p>
-                        Commercial rights are not automatically
-                        included unless specifically stated.
-                        Please contact me if you want to use an
-                        adopt for commercial purposes.
-                    </p>
+    text-decoration: none;
 
-                </div>
+    font-size: 10px;
+    font-weight: 600;
 
-            </details>
+    letter-spacing: 1.5px;
 
-        </div>
+    border-right: 1px solid var(--faq-border);
 
-    </div>
+    transition:
+        background .25s ease,
+        color .25s ease;
+}
 
+.faq-nav-item:first-child {
+    border-left: 1px solid var(--faq-border);
+}
 
-    <!-- =====================================================
-         COMMISSIONS
-    ===================================================== -->
 
-    <div class="faq-category" id="commissions">
+.faq-nav-item span {
+    color: var(--faq-accent);
 
-        <div class="faq-category-heading">
+    font-size: 9px;
+    font-weight: 600;
 
-            <div class="faq-category-number">
-                02
-            </div>
+    letter-spacing: 1px;
+}
 
-            <div>
-                <span>PERSONAL ARTWORK</span>
-                <h2>COMMISSIONS</h2>
-            </div>
 
-            <div class="faq-category-symbol">
-                ✦
-            </div>
+.faq-nav-item:hover {
+    background: var(--faq-accent-soft);
 
-        </div>
+    color: var(--faq-accent);
+}
 
 
-        <div class="faq-list">
+/* tiny red line on hover */
 
+.faq-nav-item::after {
+    content: "";
 
-            <details class="faq-item" open>
+    position: absolute;
 
-                <summary>
+    left: 20%;
+    right: 20%;
+    bottom: -1px;
 
-                    <span class="faq-q-number">01</span>
+    height: 2px;
 
-                    <strong>
-                        What do you draw?
-                    </strong>
+    background: var(--faq-accent);
 
-                    <span class="faq-plus">+</span>
+    transform: scaleX(0);
 
-                </summary>
+    transform-origin: center;
 
-                <div class="faq-answer">
+    transition: transform .25s ease;
+}
 
-                    <p>
-                        I mainly draw female characters, OCs,
-                        fanart, armor and stylized character
-                        illustrations.
-                    </p>
+.faq-nav-item:hover::after {
+    transform: scaleX(1);
+}
 
-                    <p>
-                        Please check my commission page for
-                        examples of my current style and available
-                        options.
-                    </p>
 
-                </div>
+/* =========================================================
+   INTRO NOTE
+========================================================= */
 
-            </details>
+.faq-note {
+    position: relative;
 
+    display: flex;
+    align-items: center;
 
-            <details class="faq-item">
+    gap: 20px;
 
-                <summary>
+    margin-bottom: 70px;
+    padding: 25px 30px;
 
-                    <span class="faq-q-number">02</span>
+    background: var(--faq-white);
 
-                    <strong>
-                        How long do commissions take?
-                    </strong>
+    border: 1px solid var(--faq-border);
+}
 
-                    <span class="faq-plus">+</span>
 
-                </summary>
+.faq-note-icon {
+    flex: 0 0 45px;
 
-                <div class="faq-answer">
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-                    <p>
-                        The estimated turnaround depends on the
-                        complexity of the commission and my current
-                        queue.
-                    </p>
+    width: 45px;
+    height: 45px;
 
-                    <p>
-                        I will give you an approximate timeframe
-                        before starting your commission.
-                    </p>
+    background: var(--faq-accent-soft);
 
-                </div>
+    color: var(--faq-accent);
 
-            </details>
+    font-family: "Playfair Display", serif;
 
+    font-size: 23px;
+}
 
-            <details class="faq-item">
 
-                <summary>
+.faq-note-title {
+    display: block;
 
-                    <span class="faq-q-number">03</span>
+    margin-bottom: 6px;
 
-                    <strong>
-                        Can I request changes?
-                    </strong>
+    color: var(--faq-accent);
 
-                    <span class="faq-plus">+</span>
+    font-size: 9px;
+    font-weight: 600;
 
-                </summary>
+    letter-spacing: 2.2px;
+}
 
-                <div class="faq-answer">
 
-                    <p>
-                        Yes! Minor corrections are possible during
-                        the sketch stage. Major changes requested
-                        after the sketch has been approved may
-                        require an additional fee.
-                    </p>
+.faq-note p {
+    margin: 0;
 
-                </div>
+    max-width: 850px;
 
-            </details>
+    color: var(--faq-muted);
 
+    font-size: 12px;
+    line-height: 1.75;
+}
 
-            <details class="faq-item">
 
-                <summary>
+.faq-note-star {
+    margin-left: auto;
 
-                    <span class="faq-q-number">04</span>
+    color: var(--faq-accent);
 
-                    <strong>
-                        Can I use my commission as a profile picture?
-                    </strong>
+    font-family: "Playfair Display", serif;
 
-                    <span class="faq-plus">+</span>
+    font-size: 25px;
 
-                </summary>
+    opacity: .35;
+}
 
-                <div class="faq-answer">
 
-                    <p>
-                        Personal use such as profile pictures,
-                        wallpapers and social media posts is fine
-                        unless otherwise specified.
-                    </p>
+/* =========================================================
+   CATEGORY
+========================================================= */
 
-                    <p>
-                        Please credit me when possible.
-                    </p>
+.faq-category {
+    margin-bottom: 75px;
 
-                </div>
+    scroll-margin-top: 35px;
+}
 
-            </details>
 
+/* category heading */
 
-            <details class="faq-item">
+.faq-category-heading {
+    display: grid;
 
-                <summary>
+    grid-template-columns: 65px 1fr auto;
 
-                    <span class="faq-q-number">05</span>
+    align-items: center;
 
-                    <strong>
-                        Do you draw NSFW?
-                    </strong>
+    gap: 20px;
 
-                    <span class="faq-plus">+</span>
+    margin-bottom: 20px;
+    padding-bottom: 18px;
 
-                </summary>
+    border-bottom: 1px solid var(--faq-border);
+}
 
-                <div class="faq-answer">
 
-                    <p>
-                        NSFW commissions are available depending
-                        on the type of request. Feel free to contact
-                        me privately with details so I can confirm
-                        whether I can take the commission.
-                    </p>
+/* category number */
 
-                </div>
+.faq-category-number {
+    color: var(--faq-accent);
 
-            </details>
+    font-family: "Playfair Display", serif;
 
-        </div>
+    font-size: 23px;
+    font-style: italic;
+}
 
-    </div>
 
+/* little category subtitle */
 
-    <!-- =====================================================
-         COMMERCIAL
-    ===================================================== -->
+.faq-category-heading > div:nth-child(2) > span {
+    display: block;
 
-    <div class="faq-category" id="commercial">
+    margin-bottom: 4px;
 
-        <div class="faq-category-heading">
+    color: var(--faq-muted);
 
-            <div class="faq-category-number">
-                03
-            </div>
+    font-size: 8px;
+    font-weight: 600;
 
-            <div>
-                <span>BUSINESS & LICENSING</span>
-                <h2>COMMERCIAL</h2>
-            </div>
+    letter-spacing: 2.3px;
+}
 
-            <div class="faq-category-symbol">
-                ◇
-            </div>
 
-        </div>
+/* category title */
 
+.faq-category-heading h2 {
+    margin: 0;
 
-        <div class="faq-list">
+    color: var(--faq-dark);
 
+    font-family: "Playfair Display", serif;
 
-            <details class="faq-item" open>
+    font-size: 34px;
+    font-weight: 500;
 
-                <summary>
+    line-height: 1.1;
 
-                    <span class="faq-q-number">01</span>
+    letter-spacing: -.5px;
+}
 
-                    <strong>
-                        Do you accept commercial commissions?
-                    </strong>
 
-                    <span class="faq-plus">+</span>
+/* symbol */
 
-                </summary>
+.faq-category-symbol {
+    color: var(--faq-accent);
 
-                <div class="faq-answer">
+    font-family: "Playfair Display", serif;
 
-                    <p>
-                        Yes! Commercial projects can include
-                        illustrations, character art, promotional
-                        artwork, covers and other creative work.
-                    </p>
+    font-size: 34px;
 
-                    <p>
-                        Commercial pricing is separate from my
-                        personal commission prices and depends on
-                        the scope of the project and intended use.
-                    </p>
+    opacity: .8;
+}
 
-                </div>
 
-            </details>
+/* =========================================================
+   FAQ LIST
+========================================================= */
 
+.faq-list {
+    border-top: 1px solid var(--faq-border);
+}
 
-            <details class="faq-item">
 
-                <summary>
+.faq-item {
+    margin: 0;
 
-                    <span class="faq-q-number">02</span>
+    border-bottom: 1px solid var(--faq-border);
 
-                    <strong>
-                        What counts as commercial use?
-                    </strong>
+    background: #fff;
 
-                    <span class="faq-plus">+</span>
+    transition: background .25s ease;
+}
 
-                </summary>
 
-                <div class="faq-answer">
+/* open item */
 
-                    <p>
-                        Commercial use includes artwork used to
-                        directly promote, sell or generate revenue
-                        for a product, business, game, book, brand,
-                        merchandise or other paid project.
-                    </p>
+.faq-item[open] {
+    background: var(--faq-pale);
+}
 
-                </div>
 
-            </details>
+/* =========================================================
+   QUESTION
+========================================================= */
 
+.faq-item summary {
+    display: grid;
 
-            <details class="faq-item">
+    grid-template-columns: 45px 1fr 30px;
 
-                <summary>
+    align-items: center;
 
-                    <span class="faq-q-number">03</span>
+    gap: 15px;
 
-                    <strong>
-                        Can I use commissioned art on merchandise?
-                    </strong>
+    min-height: 72px;
 
-                    <span class="faq-plus">+</span>
+    padding: 12px 15px;
 
-                </summary>
+    cursor: pointer;
 
-                <div class="faq-answer">
+    list-style: none;
 
-                    <p>
-                        Merchandise use requires commercial rights.
-                        Please tell me what kind of merchandise you
-                        are planning before ordering.
-                    </p>
+    transition:
+        background .25s ease,
+        padding-left .25s ease;
+}
 
-                </div>
 
-            </details>
+/* remove browser marker */
 
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
 
-            <details class="faq-item">
+.faq-item summary::marker {
+    display: none;
+}
 
-                <summary>
 
-                    <span class="faq-q-number">04</span>
+/* hover */
 
-                    <strong>
-                        Can you work on game projects?
-                    </strong>
+.faq-item summary:hover {
+    background: var(--faq-accent-soft);
 
-                    <span class="faq-plus">+</span>
+    padding-left: 20px;
+}
 
-                </summary>
 
-                <div class="faq-answer">
+/* number */
 
-                    <p>
-                        Yes! I'm open to discussing game-related
-                        projects, including character art,
-                        illustrations, promotional materials and
-                        visual assets.
-                    </p>
+.faq-q-number {
+    color: var(--faq-accent);
 
-                </div>
+    font-size: 9px;
+    font-weight: 600;
 
-            </details>
+    letter-spacing: 1px;
+}
 
-        </div>
 
-    </div>
+/* question text */
 
+.faq-item summary strong {
+    color: var(--faq-dark);
 
-    <!-- =====================================================
-         COLLABORATIONS
-    ===================================================== -->
+    font-size: 13px;
+    font-weight: 600;
 
-    <div class="faq-category" id="collabs">
+    line-height: 1.5;
+}
 
-        <div class="faq-category-heading">
 
-            <div class="faq-category-number">
-                04
-            </div>
+/* plus */
 
-            <div>
-                <span>LET'S CREATE TOGETHER</span>
-                <h2>COLLABS</h2>
-            </div>
+.faq-plus {
+    color: var(--faq-accent);
 
-            <div class="faq-category-symbol">
-                ♡
-            </div>
+    font-size: 20px;
+    font-weight: 400;
 
-        </div>
+    line-height: 1;
 
+    text-align: center;
 
-        <div class="faq-list">
+    transition:
+        transform .3s ease,
+        color .25s ease;
+}
 
 
-            <details class="faq-item" open>
+/* when opened */
 
-                <summary>
+.faq-item[open] .faq-plus {
+    transform: rotate(45deg);
+}
 
-                    <span class="faq-q-number">01</span>
 
-                    <strong>
-                        Are you open for collaborations?
-                    </strong>
+/* =========================================================
+   ANSWER
+========================================================= */
 
-                    <span class="faq-plus">+</span>
+.faq-answer {
+    max-width: 900px;
 
-                </summary>
+    padding:
+        0
+        70px
+        27px
+        75px;
 
-                <div class="faq-answer">
+    color: var(--faq-muted);
 
-                    <p>
-                        I'm open to selected collaborations,
-                        zines, art projects and creative events
-                        that fit my interests and schedule.
-                    </p>
+    font-size: 12px;
 
-                </div>
+    line-height: 1.85;
+}
 
-            </details>
 
+.faq-answer p {
+    margin: 0 0 12px;
+}
 
-            <details class="faq-item">
 
-                <summary>
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
 
-                    <span class="faq-q-number">02</span>
 
-                    <strong>
-                        Can I invite you to a zine?
-                    </strong>
+/* little accent line */
 
-                    <span class="faq-plus">+</span>
+.faq-answer::before {
+    content: "";
 
-                </summary>
+    display: block;
 
-                <div class="faq-answer">
+    width: 28px;
+    height: 1px;
 
-                    <p>
-                        Absolutely! Please send me the zine name,
-                        theme, schedule, requirements and any
-                        important information when contacting me.
-                    </p>
+    margin-bottom: 15px;
 
-                </div>
+    background: var(--faq-accent);
 
-            </details>
+    opacity: .45;
+}
 
 
-            <details class="faq-item">
+/* =========================================================
+   CONTACT BOX
+========================================================= */
 
-                <summary>
+.faq-contact {
+    position: relative;
 
-                    <span class="faq-q-number">03</span>
+    display: flex;
+    justify-content: center;
 
-                    <strong>
-                        Do you accept unpaid collaborations?
-                    </strong>
+    margin-top: 15px;
+    margin-bottom: 45px;
 
-                    <span class="faq-plus">+</span>
+    padding: 65px 30px;
 
-                </summary>
+    background:
+        linear-gradient(
+            135deg,
+            #fff1f2,
+            #fff8f8
+        );
 
-                <div class="faq-answer">
+    border: 1px solid var(--faq-border);
 
-                    <p>
-                        This depends on the project. I'm happy to
-                        consider personal and community projects,
-                        but please provide enough information for me
-                        to understand the scope and expectations.
-                    </p>
+    text-align: center;
 
-                </div>
+    overflow: hidden;
+}
 
-            </details>
 
+/* decorative circle */
 
-            <details class="faq-item">
+.faq-contact::before {
+    content: "";
 
-                <summary>
+    position: absolute;
 
-                    <span class="faq-q-number">04</span>
+    width: 260px;
+    height: 260px;
 
-                    <strong>
-                        How should I contact you about a project?
-                    </strong>
+    top: -160px;
+    left: -120px;
 
-                    <span class="faq-plus">+</span>
+    border: 1px solid var(--faq-accent);
 
-                </summary>
+    border-radius: 50%;
 
-                <div class="faq-answer">
+    opacity: .08;
+}
 
-                    <p>
-                        Please send a short introduction together
-                        with the project name, your role, deadlines,
-                        requirements and what you would like me to do.
-                    </p>
 
-                    <p>
-                        The more information you provide, the easier
-                        it is for me to give you an answer!
-                    </p>
+.faq-contact::after {
+    content: "";
 
-                </div>
+    position: absolute;
 
-            </details>
+    width: 300px;
+    height: 300px;
 
-        </div>
+    right: -160px;
+    bottom: -190px;
 
-    </div>
+    border: 1px solid var(--faq-accent);
 
+    border-radius: 50%;
 
-    <!-- =====================================================
-         PAYMENT
-    ===================================================== -->
+    opacity: .08;
+}
 
-    <div class="faq-category" id="payment">
 
-        <div class="faq-category-heading">
+/* content */
 
-            <div class="faq-category-number">
-                05
-            </div>
+.faq-contact-content {
+    position: relative;
 
-            <div>
-                <span>ORDERS & TRANSACTIONS</span>
-                <h2>PAYMENT</h2>
-            </div>
+    z-index: 2;
 
-            <div class="faq-category-symbol">
-                $
-            </div>
+    max-width: 600px;
+}
 
-        </div>
 
+.faq-contact-content > span {
+    display: block;
 
-        <div class="faq-list">
+    margin-bottom: 10px;
 
+    color: var(--faq-accent);
 
-            <details class="faq-item" open>
+    font-size: 9px;
+    font-weight: 600;
 
-                <summary>
+    letter-spacing: 2.5px;
+}
 
-                    <span class="faq-q-number">01</span>
 
-                    <strong>
-                        What currency are your prices in?
-                    </strong>
+.faq-contact h2 {
+    margin: 0 0 15px;
 
-                    <span class="faq-plus">+</span>
+    color: var(--faq-dark);
 
-                </summary>
+    font-family: "Playfair Display", serif;
 
-                <div class="faq-answer">
+    font-size: 44px;
+    font-weight: 500;
 
-                    <p>
-                        All prices listed on my website are in USD.
-                    </p>
+    line-height: 1;
+}
 
-                </div>
 
-            </details>
+.faq-contact p {
+    margin: 0 0 25px;
 
+    color: var(--faq-muted);
 
-            <details class="faq-item">
+    font-size: 12px;
 
-                <summary>
+    line-height: 1.8;
+}
 
-                    <span class="faq-q-number">02</span>
 
-                    <strong>
-                        When do I pay?
-                    </strong>
+/* button */
 
-                    <span class="faq-plus">+</span>
+.faq-contact a {
+    display: inline-flex;
 
-                </summary>
+    align-items: center;
+    justify-content: center;
 
-                <div class="faq-answer">
+    gap: 12px;
 
-                    <p>
-                        Payment is normally required before I begin
-                        working on the final artwork. I will confirm
-                        the total price and details before sending
-                        the invoice.
-                    </p>
+    padding: 13px 24px;
 
-                </div>
+    background: var(--faq-accent);
 
-            </details>
+    color: #fff;
 
+    text-decoration: none;
 
-            <details class="faq-item">
+    font-size: 9px;
+    font-weight: 600;
 
-                <summary>
+    letter-spacing: 2px;
 
-                    <span class="faq-q-number">03</span>
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        opacity .25s ease;
+}
 
-                    <strong>
-                        Do you offer payment plans?
-                    </strong>
 
-                    <span class="faq-plus">+</span>
+.faq-contact a:hover {
+    transform: translateY(-3px);
 
-                </summary>
+    box-shadow:
+        0 8px 20px rgba(229, 56, 59, .15);
 
-                <div class="faq-answer">
+    opacity: .92;
+}
 
-                    <p>
-                        Payment plans may be available for larger
-                        commissions or character sheets. Please ask
-                        before placing the order.
-                    </p>
 
-                </div>
+.faq-contact a b {
+    font-size: 16px;
+    font-weight: 400;
 
-            </details>
+    line-height: 1;
+}
 
 
-            <details class="faq-item">
+/* decorations */
 
-                <summary>
+.faq-contact-decoration {
+    position: absolute;
 
-                    <span class="faq-q-number">04</span>
+    top: 25px;
+    left: 35px;
 
-                    <strong>
-                        Are refunds available?
-                    </strong>
+    color: var(--faq-accent);
 
-                    <span class="faq-plus">+</span>
+    font-family: "Playfair Display", serif;
 
-                </summary>
+    font-size: 35px;
 
-                <div class="faq-answer">
+    opacity: .2;
 
-                    <p>
-                        Refunds depend on the stage of the commission.
-                        Once significant work has been completed,
-                        a full refund may no longer be possible.
-                    </p>
+    pointer-events: none;
+}
 
-                    <p>
-                        Please contact me as soon as possible if
-                        something goes wrong with your order.
-                    </p>
 
-                </div>
+.faq-contact-decoration.bottom {
+    top: auto;
+    right: 35px;
+    bottom: 25px;
+    left: auto;
 
-            </details>
+    font-size: 40px;
+}
 
 
-            <details class="faq-item">
+/* =========================================================
+   FOOTER
+========================================================= */
 
-                <summary>
+.faq-footer {
+    display: flex;
 
-                    <span class="faq-q-number">05</span>
+    align-items: center;
+    justify-content: center;
 
-                    <strong>
-                        What payment methods do you accept?
-                    </strong>
+    gap: 18px;
 
-                    <span class="faq-plus">+</span>
+    padding: 20px;
 
-                </summary>
+    color: var(--faq-muted);
 
-                <div class="faq-answer">
+    font-size: 10px;
 
-                    <p>
-                        Payment methods and available options may
-                        vary depending on the commission. I will
-                        provide the available payment method when
-                        confirming your order.
-                    </p>
+    letter-spacing: 1px;
 
-                </div>
+    text-align: center;
+}
 
-            </details>
 
-        </div>
+.faq-footer span {
+    color: var(--faq-accent);
 
-    </div>
+    font-family: "Playfair Display", serif;
 
+    font-size: 16px;
+}
 
-    <!-- =====================================================
-         CONTACT BOX
-    ===================================================== -->
 
-    <div class="faq-contact">
+.faq-footer p {
+    margin: 0;
+}
 
-        <div class="faq-contact-decoration">
-            ✦
-        </div>
 
-        <div class="faq-contact-content">
+/* =========================================================
+   TABLET
+========================================================= */
 
-            <span>
-                STILL HAVE A QUESTION?
-            </span>
+@media (max-width: 800px) {
 
-            <h2>
-                LET'S TALK ♡
-            </h2>
+    .faq-page {
+        padding: 45px 18px 60px;
+    }
 
-            <p>
-                Didn't find what you were looking for?
-                Don't hesitate to send me a message.
-            </p>
 
-            <a href="mailto:semieshaart@gmail.com">
-                CONTACT ME
-                <b>→</b>
-            </a>
+    .faq-header {
+        min-height: 255px;
 
-        </div>
+        padding: 45px 25px;
+    }
 
-        <div class="faq-contact-decoration bottom">
-            ♡
-        </div>
 
-    </div>
+    .faq-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 
-    <!-- FOOTER -->
+    .faq-nav-item {
+        border-bottom: 1px solid var(--faq-border);
+    }
 
-    <div class="faq-footer">
 
-        <span>♡</span>
+    .faq-category-heading {
+        grid-template-columns: 50px 1fr auto;
+    }
 
-        <p>
-            thank you for reading my little FAQ!
-        </p>
 
-        <span>✦</span>
+    .faq-category-heading h2 {
+        font-size: 30px;
+    }
 
-    </div>
 
-</section>
+    .faq-answer {
+        padding-left: 60px;
+        padding-right: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .faq-page {
+        padding: 30px 12px 45px;
+    }
+
+
+    /* header */
+
+    .faq-header {
+        min-height: 225px;
+
+        padding: 35px 18px;
+    }
+
+
+    .faq-kicker {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .faq-header h1 {
+        font-size: 55px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .faq-header p {
+        font-size: 11px;
+    }
+
+
+    .faq-header-deco {
+        font-size: 30px;
+    }
+
+
+    .faq-header-deco.left {
+        top: 20px;
+        left: 20px;
+    }
+
+
+    .faq-header-deco.right {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+    /* nav */
+
+    .faq-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .faq-nav-item {
+        min-height: 55px;
+
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+
+    /* note */
+
+    .faq-note {
+        align-items: flex-start;
+
+        gap: 14px;
+
+        padding: 20px;
+    }
+
+
+    .faq-note-icon {
+        flex-basis: 38px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 19px;
+    }
+
+
+    .faq-note-title {
+        font-size: 8px;
+    }
+
+
+    .faq-note p {
+        font-size: 11px;
+    }
+
+
+    .faq-note-star {
+        display: none;
+    }
+
+
+    /* categories */
+
+    .faq-category {
+        margin-bottom: 55px;
+    }
+
+
+    .faq-category-heading {
+        grid-template-columns: 38px 1fr;
+
+        gap: 12px;
+    }
+
+
+    .faq-category-heading h2 {
+        font-size: 27px;
+    }
+
+
+    .faq-category-heading > div:nth-child(2) > span {
+        font-size: 7px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .faq-category-symbol {
+        display: none;
+    }
+
+
+    /* questions */
+
+    .faq-item summary {
+        grid-template-columns: 30px 1fr 22px;
+
+        gap: 10px;
+
+        min-height: 65px;
+
+        padding: 10px 5px;
+    }
+
+
+    .faq-item summary:hover {
+        padding-left: 10px;
+    }
+
+
+    .faq-item summary strong {
+        font-size: 11px;
+    }
+
+
+    .faq-q-number {
+        font-size: 8px;
+    }
+
+
+    .faq-plus {
+        font-size: 17px;
+    }
+
+
+    /* answers */
+
+    .faq-answer {
+        padding:
+            0
+            15px
+            22px
+            45px;
+
+        font-size: 11px;
+
+        line-height: 1.75;
+    }
+
+
+    /* contact */
+
+    .faq-contact {
+        padding: 50px 20px;
+    }
+
+
+    .faq-contact h2 {
+        font-size: 36px;
+    }
+
+
+    .faq-contact p {
+        font-size: 11px;
+    }
+
+
+    .faq-contact-decoration {
+        left: 20px;
+
+        font-size: 28px;
+    }
+
+
+    .faq-contact-decoration.bottom {
+        right: 20px;
+    }
+
+
+    /* footer */
+
+    .faq-footer {
+        gap: 10px;
+
+        font-size: 9px;
+    }
+
+}
