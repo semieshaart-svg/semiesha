@@ -1,0 +1,924 @@
+ /* =========================================================
+    ✦ YCH PAGE ✦
+ ========================================================= */
+
+.ych-page {
+
+    --ych-accent: #e5383b;
+    --ych-soft: #fff1f2;
+    --ych-pale: #fff8f8;
+    --ych-dark: #252326;
+    --ych-muted: #8b8588;
+    --ych-border: #eadfe1;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 55px 35px 70px;
+
+    background:
+        radial-gradient(
+            circle at 8% 10%,
+            rgba(229,56,59,.07) 0 2px,
+            transparent 3px
+        ),
+        radial-gradient(
+            circle at 90% 30%,
+            rgba(229,56,59,.06) 0 2px,
+            transparent 3px
+        ),
+        #fff;
+
+    color: var(--ych-dark);
+
+    font-family:
+        "Montserrat",
+        "Arial",
+        sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+.ych-page *,
+.ych-page *::before,
+.ych-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ych-header {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 220px;
+
+    margin-bottom: 25px;
+
+    padding: 40px;
+
+    border: 1px solid var(--ych-border);
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff 0%,
+            #fff 55%,
+            var(--ych-soft) 100%
+        );
+
+    text-align: center;
+}
+
+
+.ych-header::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    border: 1px solid rgba(229,56,59,.12);
+
+    border-radius: 50%;
+
+    right: -100px;
+    top: -110px;
+}
+
+
+.ych-header::after {
+
+    content: "♡  ✦  ♡  ✧  ♡";
+
+    position: absolute;
+
+    bottom: 18px;
+    right: 25px;
+
+    color: var(--ych-accent);
+
+    opacity: .2;
+
+    font-size: 10px;
+
+    letter-spacing: 7px;
+}
+
+
+.ych-header-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.ych-mini-title {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--ych-accent);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+}
+
+
+.ych-header h1 {
+
+    margin: 0;
+
+    font-size: clamp(40px, 6vw, 65px);
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.ych-header p {
+
+    margin: 18px 0 0;
+
+    color: var(--ych-muted);
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+
+.ych-header-deco {
+
+    position: absolute;
+
+    color: var(--ych-accent);
+
+    font-size: 30px;
+
+    opacity: .5;
+}
+
+
+.ych-header-deco.left {
+    left: 30px;
+    top: 25px;
+}
+
+
+.ych-header-deco.right {
+    right: 40px;
+    top: 75px;
+
+    font-size: 45px;
+
+    opacity: .15;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.ych-status {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: var(--ych-accent);
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.status-dot {
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--ych-accent);
+
+    box-shadow:
+        0 0 0 4px var(--ych-soft);
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.ych-main {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(320px, .85fr);
+
+    gap: 25px;
+
+    padding: 22px;
+
+    border: 1px solid var(--ych-border);
+
+    background: var(--ych-pale);
+}
+
+
+/* =========================================================
+   CAROUSEL
+========================================================= */
+
+.ych-carousel {
+
+    position: relative;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.ych-preview {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--ych-border);
+
+    background: #fff;
+}
+
+
+.ych-preview img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .5s ease;
+}
+
+
+.ych-preview:hover img {
+
+    transform: scale(1.025);
+}
+
+
+/* IMAGE LABEL */
+
+.ych-image-label {
+
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 13px;
+
+    background:
+        rgba(255,255,255,.9);
+
+    backdrop-filter: blur(7px);
+
+    color: var(--ych-dark);
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.ych-image-label b {
+
+    color: var(--ych-accent);
+
+    font-size: 15px;
+}
+
+
+/* ARROWS */
+
+.ych-arrow {
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 50%;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--ych-border);
+
+    background: rgba(255,255,255,.95);
+
+    color: var(--ych-accent);
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        transform .2s ease;
+}
+
+
+.ych-arrow-left {
+    left: -12px;
+}
+
+
+.ych-arrow-right {
+    right: -12px;
+}
+
+
+.ych-arrow:hover {
+
+    background: var(--ych-accent);
+
+    color: #fff;
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+}
+
+
+/* DOTS */
+
+.ych-dots {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 13px;
+}
+
+
+.ych-dot {
+
+    width: 6px;
+    height: 6px;
+
+    border: 1px solid var(--ych-accent);
+
+    border-radius: 50%;
+
+    opacity: .4;
+}
+
+
+.ych-dot.active {
+
+    width: 19px;
+
+    border-radius: 10px;
+
+    background: var(--ych-accent);
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   INFO
+========================================================= */
+
+.ych-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 15px 10px;
+}
+
+
+.ych-info-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding-bottom: 17px;
+
+    border-bottom: 1px solid var(--ych-border);
+}
+
+
+.ych-number {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--ych-accent);
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.ych-info h2 {
+
+    margin: 0;
+
+    font-size: 21px;
+
+    line-height: 1.15;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.ych-heart {
+
+    color: var(--ych-accent);
+
+    font-size: 27px;
+
+    opacity: .55;
+}
+
+
+.ych-description {
+
+    margin: 18px 0 22px;
+
+    color: var(--ych-muted);
+
+    font-size: 9px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PRICES
+========================================================= */
+
+.ych-prices {
+
+    border-top: 1px solid var(--ych-border);
+}
+
+
+.ych-price {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 8px;
+
+    border-bottom: 1px solid var(--ych-border);
+}
+
+
+.ych-price.featured {
+
+    margin: 0 -2px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background: var(--ych-soft);
+}
+
+
+.ych-price-name {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.ych-price-name strong {
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: .7px;
+}
+
+
+.ych-price-name small {
+
+    color: #aaa2a5;
+
+    font-size: 7px;
+
+    letter-spacing: .7px;
+}
+
+
+.ych-price-tag {
+
+    width: fit-content;
+
+    padding: 4px 6px;
+
+    background: var(--ych-accent);
+
+    color: #fff;
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.ych-price > b {
+
+    color: var(--ych-accent);
+
+    font-size: 21px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.ych-details {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px 14px;
+
+    padding: 17px 0;
+
+    color: #aaa2a5;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ORDER BUTTON
+========================================================= */
+
+.ych-order {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 3px;
+
+    padding: 13px 15px;
+
+    border: 1px solid var(--ych-accent);
+
+    background: #fff;
+
+    color: var(--ych-accent) !important;
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+
+    text-decoration: none !important;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        transform .2s ease;
+}
+
+
+.ych-order span {
+
+    font-size: 15px;
+}
+
+
+.ych-order:hover {
+
+    transform: translateY(-3px);
+
+    background: var(--ych-accent);
+
+    color: #fff !important;
+}
+
+
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.ych-process {
+
+    margin-top: 55px;
+}
+
+
+.ych-process-title {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 25px;
+
+    color: var(--ych-accent);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.ych-steps {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+.ych-step {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    border: 1px solid var(--ych-border);
+
+    background: #fff;
+}
+
+
+.step-number {
+
+    color: var(--ych-accent);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.ych-step strong {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.ych-step p {
+
+    margin: 0;
+
+    color: var(--ych-muted);
+
+    font-size: 8px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.ych-footer {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--ych-border);
+
+    color: #aaa2a5;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+}
+
+
+.ych-footer span {
+
+    color: var(--ych-accent);
+}
+
+
+.ych-footer p {
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .ych-main {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .ych-preview {
+
+        height: 500px;
+
+    }
+
+    .ych-info {
+
+        padding:
+            10px 5px 5px;
+
+    }
+
+    .ych-steps {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .ych-page {
+
+        padding:
+            30px 12px 45px;
+
+    }
+
+    .ych-header {
+
+        padding: 30px 20px;
+
+    }
+
+    .ych-main {
+
+        padding: 10px;
+
+    }
+
+    .ych-preview {
+
+        height: 400px;
+
+    }
+
+    .ych-arrow-left {
+
+        left: -5px;
+
+    }
+
+    .ych-arrow-right {
+
+        right: -5px;
+
+    }
+
+    .ych-steps {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
