@@ -37,6 +37,88 @@
 
 
 /* =========================================================
+   PAGE NAVIGATION
+========================================================= */
+
+.price-page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin: 0 auto 30px;
+    padding-top: 2px;
+
+    font-family:
+        "DM Sans",
+        "Montserrat",
+        Arial,
+        sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.price-page-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 80px;
+
+    padding: 9px 17px;
+
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: var(--price-muted);
+
+    text-decoration: none !important;
+
+    transition:
+        color .25s ease,
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.price-page-nav a:hover {
+    color: var(--price-accent);
+
+    background: var(--price-pale);
+
+    border-color: var(--price-border);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(50,30,35,.05);
+}
+
+.price-page-nav a.active {
+    color: var(--price-accent);
+
+    background: var(--price-soft);
+
+    border-color: var(--price-border);
+
+    font-weight: 800;
+}
+
+.price-page-nav span {
+    color: var(--price-accent);
+
+    font-size: 11px;
+    opacity: .55;
+}
+
+
+/* =========================================================
    HEADER
 ========================================================= */
 
@@ -936,6 +1018,26 @@
     .price-page {
         padding: 30px 12px 45px;
     }
+
+    /* PAGE NAVIGATION */
+
+    .price-page-nav {
+        gap: 6px;
+        margin-bottom: 24px;
+
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .price-page-nav a {
+        min-width: 70px;
+        padding: 8px 13px;
+    }
+
+    .price-page-nav span {
+        font-size: 10px;
+    }
+
 
     .price-header {
         padding: 35px 20px;
