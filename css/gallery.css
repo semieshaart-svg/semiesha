@@ -925,3 +925,140 @@
     }
 
 }
+
+
+/* =========================================================
+   ART LIGHTBOX
+========================================================= */
+
+.art-image {
+    cursor: zoom-in;
+}
+
+
+/* Dark overlay */
+
+.art-lightbox {
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(25, 18, 30, 0.88);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+}
+
+
+/* Open state */
+
+.art-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Full artwork */
+
+.art-lightbox img {
+    display: block;
+
+    max-width: 95vw;
+    max-height: 92vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35);
+
+    transform: scale(0.94);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.art-lightbox.active img {
+    transform: scale(1);
+}
+
+
+/* Close button */
+
+.lightbox-close {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    font-size: 38px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    opacity: 0.85;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.lightbox-close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+
+/* Prevent page scrolling while lightbox is open */
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .art-lightbox {
+        padding: 15px;
+    }
+
+    .art-lightbox img {
+        max-width: 96vw;
+        max-height: 88vh;
+    }
+
+    .lightbox-close {
+        top: 10px;
+        right: 12px;
+    }
+
+}
